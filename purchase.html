@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase - Atlantis Rising</title>
+  <link rel="stylesheet" href="css/bootstrap-4.4.1.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <a class="navbar-brand text-gold" href="index.html">Atlantis Rising</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+    <ul class="navbar-nav mr-3">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="Mythology.html">Mythology</a></li>
+      <li class="nav-item"><a class="nav-link" href="Cast.html">Cast</a></li>
+      <li class="nav-item active"><a class="nav-link" href="Tickets.html">Tickets</a></li>
+    </ul>
+
+    <!-- Search -->
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light btn-sm my-2 my-sm-0" type="submit">Go</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Purchase -->
+<main class="container my-5 text-center">
+  <div class="mb-4">
+    <img src="images/tridents.png" class="trident-icon mr-3" alt="Trident">
+    <h2 class="text-gold glow section-title display-4 d-inline">Complete Your Purchase</h2>
+    <img src="images/tridents.png" class="trident-icon ml-3" alt="Trident">
+  </div>
+  <p class="lead mt-3">Please enter your card details to finalize your ticket purchase.</p>
+
+  <form class="row g-3 justify-content-center" action="purchasedone.html" method="get">
+    <div class="col-md-5 text-left">
+      <label for="cardName" class="form-label">Cardholder Name</label>
+      <input type="text" class="form-control" id="cardName" name="cardName" required>
+
+      <label for="cardNumber" class="form-label mt-3">Card Number</label>
+      <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
+
+      <label for="expiryDate" class="form-label mt-3">Expiry Date</label>
+      <input type="text" class="form-control" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+
+      <label for="cvv" class="form-label mt-3">CVV</label>
+      <input type="password" class="form-control" id="cvv" name="cvv" required>
+    </div>
+
+    <div class="col-10">
+      <button type="submit" class="btn btn-primary w-100 mt-4">Pay Now</button>
+    </div>
+  </form>
+</main>
+
+<!-- Footer -->
+<footer class="bg-atlantis text-center text-light py-3">
+  <p>&copy; 2025 Atlantis Rising. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
